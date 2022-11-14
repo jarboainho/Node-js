@@ -6,5 +6,5 @@ var password = generator.generate({
     uppercase: true
 });
 
-// 'uEyMTw32v9'
+
 console.log(password);

@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'elkotelrabeb111@gmail.com',
+    user: 'mo7amed.nacer.addine@gmail.com',
     pass: 'yourpassword'
   }
 });
@@ -15,9 +15,9 @@ var mailOptions = {
   text: 'That was easy!'
 };
 
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
+transporter.sendMail(mailOptions, function(err, info){
+  if (err) {
+    console.log(err);
   } else {
     console.log('Email sent: ' + info.response);
   }
